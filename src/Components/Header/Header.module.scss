@@ -1,0 +1,41 @@
+.header {
+
+	&Container {
+		background-color: var(--background);
+		@media (min-width:768px) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+	
+		}
+	}
+	&LogoWrapper {
+		position: absolute;
+		padding: 16px 0px;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-left: -15px;
+		@media (min-width:576px) {
+			position: static;
+			margin: 0;
+			background-color: var(--background);
+			border-bottom: 1px solid #C3D1C6;
+		}
+		@media (min-width:768px) {
+			width: auto;
+			border-bottom: none;
+			padding: 32px 0;
+		}
+
+	}
+	&NavWrapper {
+		padding-top: 68px;
+		@media (min-width: 576px) {
+			padding-top: 0;
+		}
+	}
+
+}
+
