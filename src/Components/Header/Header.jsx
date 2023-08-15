@@ -7,7 +7,7 @@ export const Header = ({productsInCart, setProductsInCart}) => {
 	return <header className={style.header}>
 		<Container className={style.header__container}>
 			<div className={style.header__LogoWrapper}>
-				<a href='../../../index.html'>
+				<a href='./index.html'>
 					<img src={logo} alt="логотип Ink.House" className={style.header__logo} />
 				</a>
 			</div>
