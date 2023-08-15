@@ -1,15 +1,14 @@
 .header {
 
-	&Container {
+	&__container {
 		background-color: var(--background);
 		@media (min-width:768px) {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-	
 		}
 	}
-	&LogoWrapper {
+	&__LogoWrapper {
 		position: absolute;
 		padding: 16px 0px;
 		background-color: #fff;
@@ -30,7 +29,7 @@
 		}
 
 	}
-	&NavWrapper {
+	&__NavWrapper {
 		padding-top: 68px;
 		@media (min-width: 576px) {
 			padding-top: 0;

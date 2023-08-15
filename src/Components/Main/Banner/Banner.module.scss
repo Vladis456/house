@@ -1,0 +1,122 @@
+.banner {
+	margin: 60px 0;
+	background: left / cover url('../../../img/content/banner_bg.jpg') no-repeat;
+	padding: 50px 0px;
+	@media (min-width: 576px) {
+		background: left / cover url('../../../img/content/banner_bg_576.jpg') no-repeat;
+		margin: 50px 0;
+	}
+	@media (min-width: 768px) {
+		padding: 70px 0;
+		margin: 70px 0;
+		background: center / cover url('../../../img/content/banner_bg_768.jpg') no-repeat;
+	}
+	@media (min-width: 1024px) {
+		background: top / cover url('../../../img/content/banner_bg_desktop.jpg') no-repeat;
+	}
+	@media (min-width: 1366px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	&__container {
+		@media (min-width: 1366px) {
+			padding: 0 0 0 165px;
+
+		}
+	}
+	&__group {
+		display: flex;
+		gap: 10px;
+		align-items: flex-start;
+		margin-bottom: 20px;
+		@media (min-width: 576px) {
+			gap: 20px;
+		}
+		@media (min-width: 768px) {
+			margin-bottom: 30px;
+		}
+		@media (min-width: 1024px) {
+
+		}
+		@media (min-width: 1440px) {
+			margin-bottom: 20px;
+			
+		}
+	}
+	&__img {
+		@media (min-width: 768px) {
+			width: 60px;
+			height: 60px;
+		}
+		@media (min-width: 1440px) {
+			width: 80px;
+			height: 80px;
+		}
+	}
+	&__title {
+		color: #F4F6F5;
+		line-height: 1;
+		@media (min-width: 576px) {
+			max-width: 261px;
+		}
+		@media (min-width: 768px) {
+			max-width: 370px;
+		}
+		@media (min-width: 1440px) {
+			max-width: 500px;
+		}
+	}
+	&__textGroup {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		margin-bottom: 44.5px;
+		@media (min-width: 576px) {
+			margin-bottom: 34.5px;
+		}
+		@media (min-width: 768px) {
+			margin-bottom: 38.5px;
+		}
+		@media (min-width: 1440px) {
+			margin-bottom: 81px;
+		}
+	}
+	&__text {
+		color: #fff;
+		line-height: 1.4;
+		@media (min-width: 768px) {
+			font-size: 18px;
+		}
+	}
+	&__link {
+		width: 100%;
+		display: block;
+		background-color: #EEDB6D;
+		padding: 14.5px;
+		font-size: 18px;
+		text-align: center;
+		border: 1px solid transparent;
+		&:hover {
+			background-color: #FAEB97;
+		}
+		&:focus {
+			border: 1px solid #A38314;
+		}
+		&:active {
+			background-color: #D9B949;
+		}
+		@media (min-width: 576px) {
+			display: inline;
+			width: auto;
+			padding: 14.5px 33.5px;
+		}
+		@media (min-width: 768px) {
+			padding: 18.5px 36.5px;
+			font-size: 20px;
+			max-width: 210px;
+		}
+		@media (min-width: 1440px) {
+			max-width: 257px
+		}
+	}
+}

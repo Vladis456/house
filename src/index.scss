@@ -1,11 +1,5 @@
 @font-face {
   font-family: Raleway;
-  src: url('./fonts/Raleway-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: Raleway;
   src: url('./fonts/Raleway-Medium.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
@@ -13,6 +7,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   --text: #2C2D35;
@@ -22,6 +17,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  
+ 
 }
 
 body {
@@ -74,15 +71,28 @@ fieldset {
   border: none;
 }
 
-.visuallyHidden {
-  position: fixed;
-  transform: scale(0);
+.hidden {
+  display: none;
 }
 
-.inputHide {
-  appearance: none;
+.title {
+  font-size: 24px;
+  @media (min-width:768px) {
+    font-size: 30px;
+  }
+  @media (min-width:1440px) {
+    font-size: 40px;
+  }
 }
 
-
-
-
+.link {
+  &:hover {
+    color: #598D66;
+  }
+  &:focus {
+    background-color: #D4E8D9;
+  }
+  &:active {
+    color: #376B44;
+  }
+}

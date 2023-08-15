@@ -6,17 +6,17 @@ import imgWebp from '../../../img/content/hero-img.webp'
 import { Container } from '../../layout/Container/Container'
 export const Hero = () => {
 	return <section className={style.hero}>
-		<Container className={style.heroContainer}>
-			<picture className={style.heroImgWrapper}>
+		<Container className={style.hero__container}>
+			<picture className={style.hero__imgWrapper}>
 				<source srcSet={imgWebp_2x} type='image/webp' media='(min-width: 1440px)'/>
-				<source src={heroImg_2x} media='(min-width: 1440px)'></source>
+				<source srcSet={heroImg_2x} media='(min-width: 1440px)'></source>
 				<source srcSet={imgWebp} type='image/webp' />
-				<img className={style.heroImg} src={heroImg} ></img>
+				<img className={style.hero__img} src={heroImg} alt="голубь на ветке"></img>
 			</picture>
-			<div className={style.heroInfo}>
-				<h1 className={style.heroTitle}>Реплики картин от <span>Ink.&nbsp;House</span></h1>
-				<p className={style.heroDescription}>Высокое качество отрисовки на&nbsp;плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
-				<button className={style.heroButton}>Продукция</button>
+			<div className={style.hero__info}>
+				<h1 className={style.hero__title}>Реплики картин от <span>Ink.&nbsp;House</span></h1>
+				<p className={style.hero__description}>Высокое качество отрисовки на&nbsp;плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
+				<a href='#products' className={style.hero__button}>Продукция</a>
 			</div>
 		</Container>
 

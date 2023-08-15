@@ -8,7 +8,7 @@
 		margin-top: 0;
 		margin-bottom: 70px;
 	}
-	&Container {
+	&__container {
 		@media (min-width: 576px) {
 			display: grid;
 			grid-template-columns: 38% 1fr;
@@ -20,31 +20,24 @@
 		@media (min-width: 1440px) {
 		}
 	}
-	&ImgWrapper {
+	&__imgWrapper {
 		display: none;
 		@media (min-width: 576px) {
 			display: block;
-		}
-		@media (min-width: 768px) {
-
 		}
 		@media (min-width: 1440px) {
 			justify-self: flex-end;
 		}
 	}
-	&Img {
-		@media (min-width: 768px) {
-
-		}
-	}
-	&Info {
+	&__info {
 		@media (min-width: 768px) {
 			align-self: center;
 		}
 	}
-	&Title {
+	&__title {
 		font-size: 30px;
 		margin-bottom: 20px;
+		line-height: 1;
 		& > span {
 			color: #598D66
 		}
@@ -57,18 +50,17 @@
 			margin-bottom: 20px;
 		}
 		@media (min-width: 1440px) {
-			font-size: 60px;
+			font-size: 40px;
 			line-height: 1.1;
 		}
 	}
-	&Description {
+	&__description {
 		color: #86928B;
 		font-size: 14px;
 		line-height: 1.5;
 		margin-bottom: 40px;
 		@media (min-width: 576px) {
 			font-size: 14px;
-			margin-bottom: 11px;
 		}
 		@media (min-width: 768px) {
 			font-size: 18px;
@@ -78,11 +70,23 @@
 			margin-bottom: 60px;
 		}
 	}
-	&Button {
+	&__button {
 		padding: 14px 29px;
 		font-size: 18px;
 		color: #598D66;
 		border: 1px solid #598D66;
+		&:hover {
+			color: #F4F6F5;
+			background-color: #598D66;
+		}
+		&:focus {
+			color: #598D66;
+			background-color: #D4E8D9;
+		}
+		&:active {
+			color: #fff;
+			background-color: #376B44;
+		}
 		@media (min-width: 576px) {
 			padding: 15px 41px;
 		}
