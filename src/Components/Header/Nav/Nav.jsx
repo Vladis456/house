@@ -10,9 +10,9 @@ export const Nav = ({productsInCart, setProductsInCart}) => {
 		<button className={!isBurgerActive ? style.header__burger : cn(style.header__burger, style.header__burger_active)} aria-label='открыть меню' onClick={()=> setIsBurgerActive(!isBurgerActive)}></button>
 
 		<ul className={!isBurgerActive ? style.nav__list: cn(style.nav__list, style.nav__list_active)}>
-			<li className={style.nav__item}><a className={style.nav__link} href="#products" onClick={()=> setIsBurgerActive(!isBurgerActive)}>Репродукции</a></li>
-			<li className={style.nav__item}><a className={style.nav__link} href="#new" onClick={()=> setIsBurgerActive(!isBurgerActive)}>Новинки</a></li>
-			<li className={style.nav__item}><a className={style.nav__link} href="#about" onClick={()=> setIsBurgerActive(!isBurgerActive)}>О нас</a></li>
+			<li className={style.nav__item}><a className={style.nav__link} href="#products" onClick={()=> window.matchMedia("(max-width: 576px)").matches ? setIsBurgerActive(!isBurgerActive): ''}>Репродукции</a></li>
+			<li className={style.nav__item}><a className={style.nav__link} href="#new" onClick={()=> window.matchMedia("(max-width: 576px)").matches ? setIsBurgerActive(!isBurgerActive): ''}>Новинки</a></li>
+			<li className={style.nav__item}><a className={style.nav__link} href="#about" onClick={()=> window.matchMedia("(max-width: 576px)").matches ? setIsBurgerActive(!isBurgerActive): ''}>О нас</a></li>
 		</ul>
 		<div className={!isBurgerActive ? style.header__CartWrapper : "hidden"} tabIndex={0}  onMouseEnter={() => setIsHover(isHover = true)} onMouseLeave={()=>setIsHover(isHover = false)} onClick={()=> {
 			localStorage.setItem('amount', 0)
