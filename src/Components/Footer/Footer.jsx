@@ -10,7 +10,7 @@ export const Footer = ({setCountry}) => {
 	return <footer className={style.footer}>
 		<Container className={style.footer__container}>
 			<div className={style.footer__logoWrapper}>
-				<a href='../../../index.html'><img className={style.footer__logo} src={logo} alt='логотип Ink House'/></a>
+				<a href='./index.html'><img className={style.footer__logo} src={logo} alt='логотип Ink House'/></a>
 			</div>
 			<ul className={cn(style.footer__linkList, style.footer__contacts)}>
 				<li><a href='tel:+7(999)5435454'>+7 (999) 543-54-54</a></li>
