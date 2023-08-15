@@ -1,7 +1,7 @@
 import style from './Product.module.scss';
 import cn from 'classnames';
 export const Product = ({imgName,author, name, materials, size, price, setProductsInCart}) => {
-	const imgPath = '../../../../../public/product-images/'
+	const imgPath = '/product-images/'
 	return <li className={cn(style.products__item, style.product)}>
 		<picture className={style.product__imgWrapper}>
 			<source srcSet={imgPath+imgName+'.jpg'} className={style.product__img} media='(min-width: 576px)'/>
